@@ -10,7 +10,7 @@ function Landing() {
 
           <div className='col d-flex flex-column justify-content-center ' >
 
-            <h1 style={{ color: 'white' }} className=' text-center'>Media Player <span style={{ color: 'yellow' }}>2024</span></h1>
+            <h1 style={{ color: 'white' }} className=' text-center'>Media Player <span style={{ color: 'yellow' }}>2025 </span></h1>
             <p style={{ color: 'white' }} className=' justify'>Explore media player for youtube video upload and management. You can add and manage videos , categories and even change the videos</p>
             <div className='text-center'>
 

@@ -5,7 +5,7 @@ import { deleteVideo, addHistory } from '../services/allApis';
 import { toast } from 'react-toastify';
 
 
-function VideoCard({ video, setDeleStatus,cat }) {
+function VideoCard({ video, setDeleStatus, cat }) {
     const [show, setShow] = useState(false);
     const [history, sethistory] = useState({
         caption: video.caption, url: video.url, datetime: ''
@@ -32,15 +32,15 @@ function VideoCard({ video, setDeleStatus,cat }) {
     }
 
 
-    const handleDrag=(e,id)=>{
+    const handleDrag = (e, id) => {
 
-            console.log("video is dragging :"+id);
-            e.dataTransfer.setData("videoId",id)
+        console.log("video is dragging :" + id);
+        e.dataTransfer.setData("videoId", id)
     }
 
 
 
-  
+
     const handleClose = () => {
         addHistory(history)
         setShow(false);
@@ -58,7 +58,7 @@ function VideoCard({ video, setDeleStatus,cat }) {
 
     return (
         <>
-            <Card style={cat?{ width: '100%' }:{ width: '18rem'}} draggable onDragStart={(e)=>{handleDrag(e,video?.id)}} className='ms-3 mb-3'>
+            <Card style={cat ? { width: '100%' } : { width: '18rem' }} draggable onDragStart={(e) => { handleDrag(e, video?.id) }} className='ms-3 mb-3'>
                 <Card.Img variant="top" src={video.image} onClick={handleShow} />
                 <Card.Body className='d-flex flex-row justify-content-between'>
                     <Card.Title>{video.caption}</Card.Title>

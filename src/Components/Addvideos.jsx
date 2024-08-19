@@ -106,6 +106,9 @@ function Addvideos({setAddStatus}) {
   return (
   <>
   
+
+
+      
         <span className='btn mt-5' onClick={ handleShow }>
            Click T<i class="fa-solid fa-circle-plus fa-beat"></i>Add
         </span>

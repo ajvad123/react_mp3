@@ -13,7 +13,7 @@ function Header() {
           
             <h3 style={{color:'yellow'}}>   <i className="fa-solid fa-circle-chevron-up fa-bounce fa-xl me-3" style={{ color: '#0ea096' }}></i>
             {' '}
-Media Player
+         Media Player
             </h3>
 
           </Navbar.Brand>
